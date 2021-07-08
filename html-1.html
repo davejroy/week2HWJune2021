@@ -4,90 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.js">
     <title>JS Carousel</title>
 </head>
-<body>
-    <div id="window"> 
-        <div id="imageSlider">
-            <img src="./images/1140-omni-mt-washington-resort.web.jpg" alt="NH-1">
-            <img src="./images/harrisville-pond-1180x664.jpg" alt="NH - 2">
-            <img src="./images/PortsmouthNH TugBoats.jpeg" alt="NH - 3">
-            <img src="./images/Portsmouth 10-13-2014-11-2.jpg" alt="NH - 4">
-            <img src="./images/LakeWinnipesaukee-Waterfront-514_105.jpg" alt="NH - 5">
+    <body>
+       
+            <p>Scenic New Hampshire</p>
+            <p>Animatd Carouel</p>
+       
+        <div id="window2"> 
+            <div id="imageSlider2">
+                <img src="./images/1140-omni-mt-washington-resort.web.jpg" alt="NH-1">
+                <img src="./images/harrisville-pond-1180x664.jpg" alt="NH - 2">
+                <img src="./images/PortsmouthNH TugBoats.jpeg" alt="NH - 3">
+                <img src="./images/Portsmouth 10-13-2014-11-2.jpg" alt="NH - 4">
+                <img src="./images/LakeWinnipesaukee-Waterfront-514_105.jpg" alt="NH - 5">
+            </div>
+            </div>
+        <br>
+        <br>
+        <br>
+        <div id="center">
+            <p>Scenic New Hampshire Carousel</p>
         </div>
-
-        <div>
-
-
-
+        <div id="window"> 
+            <div id="imageSlider">
+                <img src="./images/1140-omni-mt-washington-resort.web.jpg" alt="NH-1">
+                <img src="./images/harrisville-pond-1180x664.jpg" alt="NH - 2">
+                <img src="./images/PortsmouthNH TugBoats.jpeg" alt="NH - 3">
+                <img src="./images/Portsmouth 10-13-2014-11-2.jpg" alt="NH - 4">
+                <img src="./images/LakeWinnipesaukee-Waterfront-514_105.jpg" alt="NH - 5">
+            </div>
         </div>
-      
-    </div>
-    <div id="center">
-        <button onclick="prevSlide()">Previous</button> 
-        <button onclick="nextSlide()">Next</button>
-    </div>  
-    <style>
-        #window {
-            position: relative;
-            border: 10px solid ;
-            width: 800px;
-            height: 800px;
-            margin: 0 auto;
-            overflow:   hidden
-        }
-        #imageSlider {
-            display: flex;
-            transform: translateX(-000px);
-            transform: translateX(-800px);
-            transform: translateX(-1600px);
-        }
-        img {
-            width: 800px;
-            height: 800px;
-        }
-
-        #center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-            background-color: lemonchiffon;
-            
-        }
-        
-        @keyframes anime {
-            0% {
-                transform: translateX(0);
-            }
-            25% {
-                transform: translateX(-800);
-            }
-            50% {
-                transform: translateX(-1600);
-            }
-            75% {
-                transform: translateX(-2400);
-            }
-            100% {
-                transform: translateX(-3200);
-            }
-        }
-    </style>
-    <script>
-
-
-            
-         
-        // largest scope
-        // let position = 0;
-        // const nextSlide = function () { // block scoped
-        //     const imageSlider = document.getElementById('imageSlider');
-        //     imageSlider.style.transform = 'translateX()';
-        //     -webkit-transition: all .3s ease-in-out;
-        //     -moz-transition: all .3s ease-in-out;
-        //     transition: all .3s ease-in-out;
-        // } 
-    </script>
-</body>
+            <div id="buttons">
+                <button onclick="prevSlide()">Previous</button> 
+                <button onclick="nextSlide()">Next</button>
+            </div>  
+       </body>
 </html>

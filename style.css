@@ -1,43 +1,60 @@
-.carousel {
-    --currnt-slide: 0;
-    position: RELATIVE;
+.window {
+border: 1px solid;
+width: 800px;
+}
+#window {
+    position: relative;
+    border: 50px solid ;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
     overflow: hidden;
+}
+
+    .window2 {
+        border: 1px solid;
+        width: 800px;
+        }
+    #window2 {
+        position: relative;
+        border: 50px solid ;
+        width: 800px;
+        height: 800px;
+        margin: 0 auto;
+        overflow:   hidden
+}
+
+#imageSlider2 {
+    display: flex;
+    transform: translateX(-000px);
+}
+#imageSlider {
+    display: flex;
+    transform: translateX(-000px);
+    /* transform: translateX(-800px);
+    transform: translateX(-1600px); */
+}
+img {
+    width: 800px;
+    height: 800px;
+}
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    /* background-color: lemonchiffon; */
     }
+#buttons {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.carasoul-button {
-    position:absolute;
-    top:50%;
-    transform: translateY(-50%);
-    z-index: 1;
-
-    padding: 0;
-    margin: 0;
-    border-radius: 50%;
-    background-color: lemonchiffon;
-    border: 1px solid lightseagreen;
-
-    font-size: 1.5rem;
-    cursor: pointer;
-
-    transition: color 0.1s;
-}
-
-.carousel-button:hover {
-color: rgba(0, 0, 0, 0.5);
-}
-
-.carousel-button_next {
-right: 0;
-}
-
-.slide {
-flex:0 0 100%;
-}
-
-
-@media screen and (minwidth:758px) {
-.carousel-button{
-font-size: 2rem;
-margin:1rem;
-}
+}    
+p {
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+margin: 0;
 }
